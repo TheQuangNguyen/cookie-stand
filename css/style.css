@@ -1,0 +1,94 @@
+body { 
+  font-family: Comfortaa, Helvetica;
+  background: rgb(247, 220, 220);
+  text-align: center;
+}
+
+body > div:last-child { 
+  background: blue;
+}
+
+.wave { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 143px;
+  width: 100%;
+  background: url(/img/wave.png);
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave { 
+  0% { 
+    background-position: 0;
+  } 
+  100% { 
+    background-position: 1360px;
+  }
+}
+
+img.logo-left { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 10%;
+  width: auto;
+  animation: shaking 0.5s linear infinite; 
+}
+
+@keyframes shaking { 
+  0% { 
+    transform: rotate(0deg);
+  } 
+  25% { 
+    transform: rotate(-10deg);
+  }
+  50% { 
+    transform: rotate(0deg);
+  }
+  75% { 
+    transform: rotate(10deg);
+  }
+  100% { 
+    transform: rotate(0deg);
+  }
+}
+
+img.logo-right { 
+  position: absolute;
+  transform: scaleX(-1);
+  filter: FlipH;
+  top: 10px;
+  right: 10px;
+  height: 10%;
+  width: auto;
+  animation: shaking 0.5s linear infinite; 
+}
+
+h1 { 
+  margin-top: 20px;
+  
+  font-size: 2em;
+}
+
+span { 
+  color: salmon;
+}
+
+a { 
+  display: block;
+  padding-top: 20vh;
+  text-align: center;
+}
+
+ul { 
+  float: left;
+  /* float:left; */
+  width: 25vw;
+  font-size: 1.3em;
+  margin: 30px auto;
+}
+
+ul > li { 
+  padding: 10px 0px;
+}
