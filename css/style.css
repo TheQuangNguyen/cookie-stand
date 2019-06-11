@@ -101,22 +101,18 @@ body > nav > ul {
   z-index: 100;
   padding-top: 10px;
   padding-bottom: 0px;
-  box-shadow: -1px -1px 2px 1px #222222;
+  box-shadow: -1px -1px 2px 1px #333333;
 }
 
 body > nav > ul > li { 
   display: inline-block;
   padding: 0px 20px;
-  border-right: solid white;
-}
-
-body > nav > ul > li:first-child {
   border-left: solid white;
+  color: #eeeeee;
 }
 
 body > nav > ul > li > a { 
   color: #eeeeee;
   text-decoration: none;
-  
 }
 
