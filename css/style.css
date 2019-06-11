@@ -1,16 +1,12 @@
 body { 
   font-family: Comfortaa, Helvetica;
-  background: rgb(247, 220, 220);
+  background: rgb(248, 236, 236);
   text-align: center;
-}
-
-body > div:last-child { 
-  background: blue;
 }
 
 .wave { 
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   height: 143px;
   width: 100%;
@@ -67,28 +63,60 @@ img.logo-right {
 
 h1 { 
   margin-top: 20px;
-  
   font-size: 2em;
+  background: #6d748c;
+  display: inline-block;
+  padding: 10px 30px;
+  border: solid 3px #bb7365;
+  color: #eeeeee;
 }
 
 span { 
   color: salmon;
 }
 
-a { 
-  display: block;
-  padding-top: 20vh;
+body > p > a { 
+  display: inline-block;
+  margin-top: 20vh;
   text-align: center;
 }
 
-ul { 
+body > ul { 
   float: left;
-  /* float:left; */
   width: 25vw;
   font-size: 1.3em;
   margin: 30px auto;
 }
 
-ul > li { 
+body > ul > li { 
   padding: 10px 0px;
 }
+
+body > nav > ul { 
+  width: 100%;
+  background: #6d748c;
+  height: 30px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 100;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  box-shadow: -1px -1px 2px 1px #222222;
+}
+
+body > nav > ul > li { 
+  display: inline-block;
+  padding: 0px 20px;
+  border-right: solid white;
+}
+
+body > nav > ul > li:first-child {
+  border-left: solid white;
+}
+
+body > nav > ul > li > a { 
+  color: #eeeeee;
+  text-decoration: none;
+  
+}
+
