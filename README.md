@@ -7,7 +7,7 @@
 #customerHour = array that holds the number of customers per hour for one store
 #numStaffPerHour = array that holds the number of staff members at every hour for one store
 #There is also a prototype function for the constructor that holds the common functions that are accessible to every store. These functions includes: 
-# cookiesPerHour() - Calculate cookies sold per hour and push it into the array cookieSaleHour. Calculation uses the control curve for the max customer at every hour and use that max to calculate the random number of customers which then use to calculate number of cookie sold per hour. #staffPerHour() -  Calculate number of staff needed to work at every hour and store it in the array numStaffPerHour
+#cookiesPerHour() - Calculate cookies sold per hour and push it into the array cookieSaleHour. Calculation uses the control curve for the max customer at every hour and use that max to calculate the random number of customers which then use to calculate number of cookie sold per hour. #staffPerHour() -  Calculate number of staff needed to work at every hour and store it in the array numStaffPerHour
 #cookieRender() - Render the information for the cookies sold per hour for each store to the sales.html in a table format. 
 #staffRender() - Render the information for the amount of staff per hour for each store to the sales.html in a table format.
 #There are also headerRow and FooterRow function that will render the header row that displays the individual hours and the footer row that will display the total per hour of every store and the total overall at the end of the day of every store. 
