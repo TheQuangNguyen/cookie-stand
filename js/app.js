@@ -223,15 +223,10 @@ function appendNewStore(event) {
   event.target.reset();
 }
 
-function clear(event) { 
-  event.preventDefault();
-  form.reset();
-}
-
-var clear = document.getElementById('clearButton')
-form.addEventListener('click', clear);
 var form = document.getElementById('cookiesForm');
 form.addEventListener('submit', appendNewStore);
+
+
 
 
 
