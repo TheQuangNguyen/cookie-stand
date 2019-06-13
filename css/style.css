@@ -69,6 +69,7 @@ h1 {
   padding: 10px 30px;
   border: solid 3px #bb7365;
   color: #eeeeee;
+  box-shadow: 0px 8px 32px black;
 }
 
 span { 
@@ -120,17 +121,20 @@ body > nav > ul > li > a {
 
 .table-title { 
   font-size: 1.8em;
-  margin: 30px 0px;;
+  margin: 3vh 0px;
+  margin-top: 8vh;
 }
 
 table { 
-  width: 80%;
+  width: 100px;
   margin: auto;
   margin-bottom: 50px;
+  border: solid 1px #444;
+  box-shadow: 0px 4px 16px;
 }
 
 th { 
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bold;
   background-color: #AAA;
   padding: 0px 5px;
@@ -138,17 +142,64 @@ th {
 }
 
 td { 
-  padding: 1.2em;
+  padding: 0.6em;
 }
 
 tr { 
   border-bottom: 1px solid #444;
 }
 
-tr:nth-child(even), tfoot > tr { 
+tr:nth-child(even) { 
   background-color: #DDD;
+}
+
+tfoot > tr { 
+  background: #AAA;
 }
 
 tr > td:first-child { 
   font-weight: bold;
+}
+
+/* Form */
+
+main > form > fieldset > div > p { 
+  float: left; 
+  margin: 0.5em 1.4em auto;
+  width: 11rem;
+}
+
+main > form {
+  border: solid 1px #444;
+  width: 80%;
+  margin: 2em auto;
+  margin-top: 3em;
+  background: #999;
+  color: white;
+  box-shadow: 0px 8px 32px rgba(0,0,0,0.5);
+}
+
+
+main > form > fieldset > legend { 
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+main > form > fieldset > div { 
+  display: inline-block;
+  margin: auto;
+}
+
+main > form > fieldset > div >  button { 
+  padding: 0.5em;
+  font-size: 1em;
+  background: #bb7365;
+  float: right;
+  margin: auto;
+  margin: 1em 2em;
+}
+
+main > form > fieldset { 
+  padding: 1.2em;
+  width: auto;
 }
