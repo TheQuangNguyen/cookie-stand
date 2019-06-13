@@ -29,10 +29,10 @@ img.logo-left {
   left: 10px;
   height: 10%;
   width: auto;
-  animation: shaking 0.5s linear infinite; 
+  animation: shakingLeft 0.5s linear infinite; 
 }
 
-@keyframes shaking { 
+@keyframes shakingLeft { 
   0% { 
     transform: rotate(0deg);
   } 
@@ -50,15 +50,32 @@ img.logo-left {
   }
 }
 
+@keyframes shakingRight { 
+  0% { 
+    transform: rotate(0deg) scaleX(-1);
+  } 
+  25% { 
+    transform: rotate(-10deg) scaleX(-1);
+  }
+  50% { 
+    transform: rotate(0deg) scaleX(-1);
+  }
+  75% { 
+    transform: rotate(10deg) scaleX(-1);
+  }
+  100% { 
+    transform: rotate(0deg) scaleX(-1);
+  }
+}
+
 img.logo-right { 
   position: absolute;
-  transform: scaleX(-1);
   filter: FlipH;
   top: 10px;
   right: 10px;
   height: 10%;
   width: auto;
-  animation: shaking 0.5s linear infinite; 
+  animation: shakingRight 0.5s linear infinite; 
 }
 
 h1 { 
@@ -102,7 +119,7 @@ body > nav > ul {
   z-index: 100;
   padding-top: 10px;
   padding-bottom: 0px;
-  box-shadow: -1px -1px 2px 1px #333333;
+  box-shadow: -1px -1px 2px 1px rgba(50,50,50,0.4);
 }
 
 body > nav > ul > li { 
@@ -181,12 +198,12 @@ main > form {
 
 
 main > form > fieldset > legend { 
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding-top: 0.7rem;
 }
 
 main > form > fieldset > div { 
-  display: inline-block;
+  display: inline;
   margin: auto;
 }
 
@@ -194,7 +211,6 @@ main > form > fieldset > div >  button {
   padding: 0.5em;
   font-size: 1em;
   background: #bb7365;
-  float: right;
   margin: auto;
   margin: 1em 2em;
 }
