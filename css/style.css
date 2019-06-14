@@ -292,6 +292,7 @@ span.body {
   background: rgb(248, 236, 236);
   box-shadow: 0px 16px 32px rgba(0,0,0,0.35);
   padding: 10px;
+  margin-bottom: 6rem;
 }
 
 .third-section > img { 
@@ -307,4 +308,47 @@ span.body {
 }
 span.third { 
   color: #FF8362;
+}
+
+/* fourth section */
+
+.fourth-section { 
+  width: 90%;
+  overflow: hidden;
+  box-shadow: 0px 16px 32px rgba(0,0,0,0.75);
+  padding: 10px;
+  margin: auto;
+  background: #3C4663;
+  color: rgb(253, 179, 159);
+  margin-bottom: 6rem;
+}
+
+
+.fourth-section > div { 
+  width: 100%;
+  overflow: hidden;
+}
+
+.fourth-section > div > img { 
+  width: 45%;
+  float: left;
+  padding: 10px;
+}
+
+.fourth-section > h2 { 
+  font-weight: bold;
+  font-size: 3em;
+  padding: 10px;
+}
+
+.fourth-section > div > h2 { 
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.fourth-section > div > h2:first-child { 
+  font-weight: bold;
+  font-size: 3em;
+  position: relative;
+  right: 30%;
 }
