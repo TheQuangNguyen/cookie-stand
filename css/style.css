@@ -352,3 +352,52 @@ span.third {
   position: relative;
   right: 30%;
 }
+
+/* Shirt */
+
+.shirt { 
+  width: 60%;
+  margin: auto;
+  box-shadow: 0px 16px 32px rgba(0,0,0,0.75);
+  background: #3C4663;
+  overflow: hidden;
+  padding: 1em;
+  color: white;
+}
+
+.shirt > img { 
+  float: left;
+  margin: 1em;
+
+}
+
+.shirt > h2 { 
+  font-size: 1.5rem;
+  margin-top: 1em;
+}
+
+.shirt > p { 
+  margin-top: 2em;
+}
+
+.shirt > button { 
+  padding: 1em;
+  font-weight: bold;
+  background: #3C4663;
+  margin-top: 2em;  
+  border: 1px solid rgb(253, 179, 159);
+  color: rgb(253, 179, 159);
+  border-radius: 40px;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.35); 
+  text-decoration: none;
+}
+
+.shirt > button:hover { 
+  background: rgb(253, 179, 159);
+  color: white;
+}
+
+.shirt > button:active { 
+  text-decoration: none;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.75), inset -2px -2px 2px rgba(0,0,0,0.55);
+}
